@@ -12,6 +12,10 @@ public class OrdemDeServico {
         this.servicos = new ArrayList<>();
     }
 
+    public void adicionarServico(Servico servico){
+        servicos.add(servico);
+    }
+
     public int getCodigo() {
         return codigo;
     }
@@ -39,7 +43,7 @@ public class OrdemDeServico {
             for(Servico s: servicos){
                 valorTotal += s.getValor();
             }
-        }return va
+        }return valorTotal;
     }
     
     
